@@ -1,0 +1,74 @@
+<!-- What are you doing looking at the code? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <title>Congratulations, you won something</title>
+</head>
+<body>
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-12 text-center">
+                <h3>Congratulations, you are the brand new winner of our monthly award!</h3>
+                <h6>To redeem your award, you must write your name and add your number.</h6>
+                <small>Using this slot machine based input.<small>(Cause we hate you)</small></small>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="form-group row">
+                    <label class="col-form-label col-5" for="selectionOption">What field do you want to input to?</label>
+                    <div class="col-4">
+                        <select class="form-control" id="selectionOption">
+                            <option value="1">Name</option>
+                            <option value="2">Phone</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-success" id="spinBtn">Spin!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" id="slotMachine">
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <input class="letterRand" type="text" readonly disabled />
+                    </div>
+                    <div class="col-6 text-center">
+                        <input class="letterRand" type="text" readonly disabled />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="mainForm">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <!-- No fiddling, alright? Don't even think about it. -->
+                <div class="form-group row">
+                    <label for="username" class="col-form-label col-12">Name:</label>
+                    <div class="col-12">
+                        <input minlength="2" required class="form-control" type="text" name="username" id="username" readonly />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phone" class="col-form-label col-12">Phone number:</label>
+                    <div class="col-12">
+                        <input minlength="2" required class="form-control" type="text" name="phone" id="phone" readonly />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-12 text-center">
+                        <button disabled id="sendBtn" type="submit" class="btn btn-info">Send my data!</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+<!-- Import the little scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+
+</html>

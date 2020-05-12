@@ -1,0 +1,1 @@
+It's incredible what boredom can lead to, huh?
